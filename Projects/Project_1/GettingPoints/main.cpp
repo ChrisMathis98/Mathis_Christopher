@@ -439,8 +439,3 @@ int main(int argc, char** argv) {
     //Exit stage right!
     return 0;
 }
-//use for flipping coin
-//while(roll!=r){
-  //  cout<<"invalid entry, please press r to roll the die\n";
-    //cin>>roll;
-//}
