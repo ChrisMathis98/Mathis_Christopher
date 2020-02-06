@@ -31,7 +31,7 @@ int main(int argc, char** argv) {
     //Initialize Variables
     player=comp=26;//counters starts at 26
     
-    //propmt to flip and flip
+    //prompt to flip and flip
     cin>>pCard>>cCard;
     
     //See who gets the points/cards

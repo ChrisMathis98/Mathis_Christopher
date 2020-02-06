@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-MacOSX
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-MacOSX
-CND_ARTIFACT_NAME_Debug=menuforgame
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-MacOSX/menuforgame
+CND_ARTIFACT_NAME_Debug=war_v1
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-MacOSX/war_v1
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-MacOSX/package
-CND_PACKAGE_NAME_Debug=menuforgame.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-MacOSX/package/menuforgame.tar
+CND_PACKAGE_NAME_Debug=warv1.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-MacOSX/package/warv1.tar
 # Release configuration
 CND_PLATFORM_Release=GNU-MacOSX
 CND_ARTIFACT_DIR_Release=dist/Release/GNU-MacOSX
-CND_ARTIFACT_NAME_Release=menuforgame
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-MacOSX/menuforgame
+CND_ARTIFACT_NAME_Release=war_v1
+CND_ARTIFACT_PATH_Release=dist/Release/GNU-MacOSX/war_v1
 CND_PACKAGE_DIR_Release=dist/Release/GNU-MacOSX/package
-CND_PACKAGE_NAME_Release=menuforgame.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-MacOSX/package/menuforgame.tar
+CND_PACKAGE_NAME_Release=warv1.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU-MacOSX/package/warv1.tar
 #
 # include compiler specific variables
 #
