@@ -5,31 +5,26 @@
  */
 
 //System Libraries
-#include <iostream>
-#include <iomanip>
-#include <ctime>
-#include <cstdlib>
-#include <string>
-#include <fstream>
-using namespace std;
+#include <iostream> //Input/Output
+#include <iomanip>  //Format
+#include <ctime>    //Time
+#include <cstdlib>  //Srand/Rand
+#include <string>   //Strings
+#include <fstream>  //File I/O
+using namespace std;//Standard Name-Space Where Systm Libraries Exist
 
 //Global Constants
 const float CNVPERC=100;//Conversion From Decimal To Percent
 
 //Execution Begins Here
 int main(int argc, char** argv) {
-    //Display Beginning Message Using Files
-    fstream inFile;
-    inFile.open("beg.dat");
-    string msg;
-    while(inFile>>msg){
-        cout<<msg<<" ";
-    }
-    
     //Set Random Number seed
     srand(static_cast<unsigned int>(time(0)));
     
     //Declare Variables
+    ifstream in;                                //In From File
+    ofstream out;                               //Out To File
+    string msg;                                 //String To Use For Input From File
     bool play;                                  //Boolean To Start Or Exit Game 
     char choice;                                //player Input To Flip Card
     unsigned int pRank, pSuit, cRank, cSuit;    //Rank and Suit Of Cards
@@ -40,8 +35,15 @@ int main(int argc, char** argv) {
     string cnt;                                 //Statement Variable Used With Ternary Operator
     
     //Both Start With Half The Deck
-    player=comp=47;
+    player=comp=26;
     nRounds=pWin=cWin=0;
+    
+    //Display Beginning Message Using File
+    in.open("beg.dat");
+    out.open("stat.dat");
+    while(in>>msg){//While Loop To Output Everything From File
+        cout<<msg<<" ";
+    }
     
     //Boolean Test To Start Or Exit Game
     play=true;
@@ -248,7 +250,6 @@ int main(int argc, char** argv) {
 
                 //Choose Heads or Tails
                 cin>>flip;
-                cout<<endl;
 
                 //While Loop to Validate Input
                 while(flip!=1 && flip!=0){
@@ -259,7 +260,7 @@ int main(int argc, char** argv) {
 
                 //Flip Coin
                 coin=rand()%2;
-                cout<<coin<<endl;
+                cout<<coin<<endl<<endl;
 
                 if(flip==coin){
                     cout<<"Player Wins The War!\n"<<endl;
@@ -383,7 +384,6 @@ int main(int argc, char** argv) {
 
                 //Choose Heads or Tails
                 cin>>flip;
-                cout<<endl;
 
                 //While Loop to Validate Input
                 while(flip!=1 && flip!=0){
@@ -394,7 +394,7 @@ int main(int argc, char** argv) {
 
                 //Flip Coin
                 coin=rand()%2;
-                cout<<coin<<endl;
+                cout<<coin<<endl<<endl;
 
                 if(flip==coin){
                     cout<<"Player Wins The War!\n"<<endl;
@@ -517,7 +517,6 @@ int main(int argc, char** argv) {
 
                 //Choose Heads or Tails
                 cin>>flip;
-                cout<<endl;
 
                 //While Loop to Validate Input
                 while(flip!=1 && flip!=0){
@@ -528,7 +527,7 @@ int main(int argc, char** argv) {
 
                 //Flip Coin
                 coin=rand()%2;
-                cout<<coin<<endl;
+                cout<<coin<<endl<<endl;
 
                 if(flip==coin){
                     cout<<"Player Wins The War!\n"<<endl;
@@ -652,7 +651,6 @@ int main(int argc, char** argv) {
 
                 //Choose Heads or Tails
                 cin>>flip;
-                cout<<endl;
 
                 //While Loop to Validate Input
                 while(flip!=1 && flip!=0){
@@ -663,7 +661,7 @@ int main(int argc, char** argv) {
 
                 //Flip Coin
                 coin=rand()%2;
-                cout<<coin<<endl;
+                cout<<coin<<endl<<endl;
 
                 if(flip==coin){
                     cout<<"Player Wins The War!\n"<<endl;
@@ -787,7 +785,6 @@ int main(int argc, char** argv) {
 
                 //Choose Heads or Tails
                 cin>>flip;
-                cout<<endl;
 
                 //While Loop to Validate Input
                 while(flip!=1 && flip!=0){
@@ -798,7 +795,7 @@ int main(int argc, char** argv) {
 
                 //Flip Coin
                 coin=rand()%2;
-                cout<<coin<<endl;
+                cout<<coin<<endl<<endl;
 
                 if(flip==coin){
                     cout<<"Player Wins The War!\n"<<endl;
@@ -922,7 +919,6 @@ int main(int argc, char** argv) {
 
                 //Choose Heads or Tails
                 cin>>flip;
-                cout<<endl;
 
                 //While Loop to Validate Input
                 while(flip!=1 && flip!=0){
@@ -933,7 +929,7 @@ int main(int argc, char** argv) {
 
                 //Flip Coin
                 coin=rand()%2;
-                cout<<coin<<endl;
+                cout<<coin<<endl<<endl;
 
                 if(flip==coin){
                     cout<<"Player Wins The War!\n"<<endl;
@@ -1057,7 +1053,6 @@ int main(int argc, char** argv) {
 
                 //Choose Heads or Tails
                 cin>>flip;
-                cout<<endl;
 
                 //While Loop to Validate Input
                 while(flip!=1 && flip!=0){
@@ -1068,7 +1063,7 @@ int main(int argc, char** argv) {
 
                 //Flip Coin
                 coin=rand()%2;
-                cout<<coin<<endl;
+                cout<<coin<<endl<<endl;
 
                 if(flip==coin){
                     cout<<"Player Wins The War!\n"<<endl;
@@ -1098,7 +1093,6 @@ int main(int argc, char** argv) {
 
             //Choose Heads Or Tails
             cin>>flip;
-            cout<<endl;
 
             //While Loop To Validate Input
             while(flip!=1 && flip!=0){
@@ -1109,7 +1103,7 @@ int main(int argc, char** argv) {
 
             //Flip Coin
             coin=rand()%2;
-            cout<<coin<<endl;
+            cout<<coin<<endl<<endl;
 
             if(flip==coin){
                 cout<<"Player Wins The War!\n";
@@ -1138,7 +1132,6 @@ int main(int argc, char** argv) {
 
             //Choose Heads Or Tails
             cin>>flip;
-            cout<<endl;
 
             //While Loop To Validate Input
             while(flip!=1 && flip!=0){
@@ -1149,7 +1142,7 @@ int main(int argc, char** argv) {
 
             //Flip Coin
             coin=rand()%2;
-            cout<<coin<<endl;
+            cout<<coin<<endl<<endl;
 
             if(flip==coin){
                 cout<<"Player Wins The War!\n";
@@ -1180,21 +1173,29 @@ int main(int argc, char** argv) {
     }while(player<52 && comp<52);
     
     if(player==52 || comp==0){
-        cout<<endl<<"You Won :)\n";
+        cout<<endl<<"You Won :)\n"<<endl;
     }
     else if(player==0 || comp==52){
-        cout<<endl<<"Computer Won :(\n";
+        cout<<endl<<"Computer Won :(\n"<<endl;
     }
     
     pPerc=(static_cast<float>(pWin)/nRounds)*CNVPERC;
     cPerc=(static_cast<float>(cWin)/nRounds)*CNVPERC;
     
+    //Output Stats To Player In Program
     cout<<"Player Won "<<pWin<<" Of Rounds, Which Is Good For %"
             <<fixed<<setprecision(2)<<showpoint<<pPerc<<" Of The Rounds.\n";
     cout<<"Computer Won "<<cWin<<" Of Rounds, Which Is Good For %"
-            <<fixed<<setprecision(2)<<showpoint<<cPerc<<" Of The Rounds.\n";        
+            <<fixed<<setprecision(2)<<showpoint<<cPerc<<" Of The Rounds.\n";
+    
+    //Output Stats To File
+    out<<"Player Won "<<pWin<<" Of Rounds, Which Is Good For %"
+            <<fixed<<setprecision(2)<<showpoint<<pPerc<<" Of The Rounds.\n";
+    out<<"Computer Won "<<cWin<<" Of Rounds, Which Is Good For %"
+            <<fixed<<setprecision(2)<<showpoint<<cPerc<<" Of The Rounds.\n";
     
     //Exit stage right!
-    inFile.close();
+    in.close();
+    out.close();
     return 0;
 }
