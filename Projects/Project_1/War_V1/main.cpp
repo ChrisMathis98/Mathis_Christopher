@@ -34,9 +34,10 @@ int main(int argc, char** argv) {
     float pPerc, cPerc;                         //Percentage Of Rounds Won
     string cnt;                                 //Statement Variable Used With Ternary Operator
     
-    //Both Start With Half The Deck
-    player=comp=26;
+    //Initialize Variables
+    player=comp=26;//Both Start With Half The Deck (26 Cards)
     nRounds=pWin=cWin=0;
+    play=true;
     
     //Display Beginning Message Using File
     in.open("beg.dat");
@@ -46,7 +47,6 @@ int main(int argc, char** argv) {
     }
     
     //Boolean Test To Start Or Exit Game
-    play=true;
     cout<<endl;
     cin>>choice;
     if(choice!='Y' && choice!='y'){
