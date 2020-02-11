@@ -1,11 +1,13 @@
 /* 
  * Author: Christopher Mathis
- * Created on February 9, 2020
- * Purpose: DMV Exams
+ * Created on February 7, 2020
+ * Purpose: Sales of slasa using arrays
  */
 
 //System Libraries
 #include <iostream>
+#include <iomanip>
+#include <string>
 using namespace std;
 
 //User Libraries
@@ -14,59 +16,48 @@ using namespace std;
 //Only Universal Constants, Math, Physics, Conversions, Higher Dimensions
 
 //Function Prototypes
-void wrong(char[], char[], int);
-int match(char[], char[], int);
 
 //Execution Begins Here
 int main(int argc, char** argv) {
     //Set Random Number seed
     
     //Declare Variable Data Types and Constants
-    const int SIZE=20;
-    char correct[]={'A', 'D', 'B', 'B', 'C', 'B', 'A', 'B', 'C', 'D', 'A', 'C', 'D', 'B', 'D', 'C', 'C', 'A', 'D', 'B'};
-    char student[SIZE];
-    int result;
+    const int SIZE=5;
+    string salsa[]={"mild", "medium", "sweet", "hot", "zesty"};
+    float profit[SIZE], total;
+    int lowest, highest;
     
     //Initialize Variables
-    cout<<"Enter the student's test answers:\n";
-    for(int i=0; i<SIZE; i++){
-        cin>>student[i];
-    }
+    lowest=highest=total=0;//initially set values
     
     //Process or map Inputs to Outputs
-    result=match(correct, student, SIZE);
-    
-    if(result>=15){
-        cout<<"The student passed.\n";
+    cout<<fixed<<setprecision(2)<<showpoint;//set to 2 decimal spaces
+    for(int i=0; i<SIZE; i++){//for loop to get sales for each salsa type, stores in array
+        cout<<"Enter the sales of "<<salsa[i]<<" salsa:$\n";
+        cin>>profit[i];
+        total+=profit[i];
     }
-    else{
-        cout<<"The student failed.\n";
+    for(int j=0; j<SIZE; j++){//for loop to find lowest and highest selling product
+        if(profit[j]<profit[lowest]){
+            lowest=j;
+        }
+        if(profit[j]>profit[highest]){
+            highest=j;
+        }
     }
-    
-    cout<<"There were "<<result<<" correct answers.\n";
-    cout<<"There were "<<SIZE-result<<" incorrect answers.\n";
-    cout<<"Incorrect questions:\n";
-    wrong(correct, student, SIZE);
     
     //Display Outputs
+    cout<<"Type     Sales\n";
+    cout<<salsa[0]<<"     "<<"$"<<profit[0]<<endl;
+    cout<<salsa[1]<<"   "<<"$"<<profit[1]<<endl;
+    cout<<salsa[2]<<"    "<<"$"<<profit[2]<<endl;
+    cout<<salsa[3]<<"      "<<"$"<<profit[3]<<endl;
+    cout<<salsa[4]<<"    "<<"$"<<profit[4]<<endl;
     
+    cout<<"Total Sales was $"<<total<<endl;
+    cout<<salsa[lowest]<<" was the lowest selling product.\n";
+    cout<<salsa[highest]<<" was the highest selling product.";
+
     //Exit stage right!
     return 0;
-}
-void wrong(char a[], char b[], int c){
-    for(int i=0; i<c; i++){
-        if(b[i]!=a[i]){
-            cout<<i+1<<endl;
-        }
-    }
-}
-
-int match(char a[], char b[], int c){
-    int correct=0;
-    for(int i=0; i<c; i++){
-        if(b[i]==a[i]){
-            correct++;
-        }
-    }
-    return correct++;
 }

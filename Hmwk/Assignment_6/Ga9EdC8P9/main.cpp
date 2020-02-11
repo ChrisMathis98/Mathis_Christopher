@@ -14,8 +14,8 @@ using namespace std;
 //Only Universal Constants, Math, Physics, Conversions, Higher Dimensions
 
 //Function Prototypes
-int selection(int[], int, int, int);
-int bubble(int[], int, int, int);
+int selection(int[], int, int);
+int bubble(int[], int, int);
 
 //Execution Begins Here
 int main(int argc, char** argv) {
@@ -44,48 +44,43 @@ int main(int argc, char** argv) {
     //Process or map Inputs to Outputs
     
     //Display Outputs
-    cout<<"Selection Sort "<<selection(arr1, 20, start, end)<<endl;
-    cout<<"Bubble Sort "<<bubble(arr2, 20, start, end);
+    cout<<"Selection Sort "<<selection(arr1, start, end)<<endl;
+    cout<<"Bubble Sort "<<bubble(arr2, start, end);
     
     //Exit stage right!
     return 0;
 }
 
-int selection(int a[], int b, int s, int e){
-    int counter=1;
-    int min, index;
-    for(s; s<e; s++){
-        min=a[s];
-        index=s;
-        for(int i=s+1; i<e; i++){
-            if(a[i]<min){
-                min=a[index];
-                index=i;
+int selection(int a[], int start, int end){
+    int counter=0;
+    int val, min;
+    for(int i=start; i<end-1; i++){
+        min=i;
+        val=a[i];
+        
+        for(int index=i+1; index<end; index++){
+            if(a[index]<val){
+               val=a[i];
+               min=index;
             }
         }
-        if(index==s) continue;
-        a[index]=a[s];
-        a[s]=min;
-        counter++;
+       counter++;
+       swap(a[min], a[i]);
     }
     return counter;
 }
 
-int bubble(int a[], int b, int s, int e){
-    int counter=1;
-    bool swapped;
-    int temp;
-    do{
-        swapped=false;
-        for(s; s<e-1; s++){
-            if(a[s]>a[s+1]){
-                temp=a[s];
-                a[s]=a[s+1];
-                a[s+1]=temp;
-                swapped=true;
+int bubble(int a[], int start, int end){
+    int index;
+    int counter=0;
+    
+    for(int i=end-1; i>0; i--){
+        for(index=start; index<i; index++){
+            if(a[index]>a[index+1]){
                 counter++;
+                swap(a[index], a[index+1]);
             }
         }
-    }while(swapped);
+    }
     return counter;
 }

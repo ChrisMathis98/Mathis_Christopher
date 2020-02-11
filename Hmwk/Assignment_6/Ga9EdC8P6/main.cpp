@@ -15,7 +15,7 @@ using namespace std;
 //Only Universal Constants, Math, Physics, Conversions, Higher Dimensions
 
 //Function Prototypes
-bool isFound(string[], int, string);
+string search(string[], int, string);
 
 //Execution Begins Here
 int main(int argc, char** argv) {
@@ -34,15 +34,10 @@ int main(int argc, char** argv) {
 	string name;
     //Initialize Variables
     cout<<"Enter a name to search for:\n";
-    cin>>name;
+    getline(cin,name);
     
     //Process or map Inputs to Outputs
-    if(isFound(names, NUM_NAMES, name)==true){
-        cout<<"The name was found";
-    }
-    else{
-        cout<<"The name was not found";
-    }
+    search(names, NUM_NAMES, name);
     
     //Display Outputs
 
@@ -50,19 +45,13 @@ int main(int argc, char** argv) {
     return 0;
 }
 
-bool isFound(string a[], int b, string c){
-    int first=0, last=b-1, middle;
-    while(first<=last){
-        middle=(first+last)/2;
-        if(a[middle]==c){
-            return true;
-        }
-        else if(a[middle]>c){
-            last=middle-1;
-        }
-        else if(a[middle]<c){
-            first=middle+1;
+string search(string a[], int size, string name){
+    bool found=false;
+    for(int i=0; i<size; i++){
+        if(name==a[i]){
+            found=true;
+            cout<<"The name was found";
         }
     }
-    return false;
+    if(!found) cout<<"The name was not found";
 }
