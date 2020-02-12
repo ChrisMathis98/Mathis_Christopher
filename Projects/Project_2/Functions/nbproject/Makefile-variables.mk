@@ -7,21 +7,21 @@ CND_BASEDIR=`pwd`
 CND_BUILDDIR=build
 CND_DISTDIR=dist
 # Debug configuration
-CND_PLATFORM_Debug=GNU-MacOSX
-CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-MacOSX
+CND_PLATFORM_Debug=Cygwin-Windows
+CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin-Windows
 CND_ARTIFACT_NAME_Debug=functions
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-MacOSX/functions
-CND_PACKAGE_DIR_Debug=dist/Debug/GNU-MacOSX/package
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/functions
+CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin-Windows/package
 CND_PACKAGE_NAME_Debug=functions.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-MacOSX/package/functions.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/functions.tar
 # Release configuration
-CND_PLATFORM_Release=GNU-MacOSX
-CND_ARTIFACT_DIR_Release=dist/Release/GNU-MacOSX
+CND_PLATFORM_Release=Cygwin-Windows
+CND_ARTIFACT_DIR_Release=dist/Release/Cygwin-Windows
 CND_ARTIFACT_NAME_Release=functions
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-MacOSX/functions
-CND_PACKAGE_DIR_Release=dist/Release/GNU-MacOSX/package
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/functions
+CND_PACKAGE_DIR_Release=dist/Release/Cygwin-Windows/package
 CND_PACKAGE_NAME_Release=functions.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-MacOSX/package/functions.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/functions.tar
 #
 # include compiler specific variables
 #
