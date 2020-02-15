@@ -1,0 +1,232 @@
+Pseudo Code
+Comments (Name, Date, Etc)
+
+System Libraries
+
+Function Prototypes
+
+Percentage Conversion
+
+Main() Execution Begins
+
+Declare Variables
+
+Initialize Variables
+
+Display Opening Message Using Files
+	While Loop to Output Whole File
+
+Boolean Test To Start or Exit Game
+	If choice isn’t Y or y 
+		Statements
+		Exit()
+	Else
+		Return true
+	If(true)
+		For loop to input user names into vector
+
+	Start the game loop
+	
+	Initialize
+
+Do-While Loop To Continue Game
+	Prompt To Flip Cards
+	While Loop To Validate Input
+	Flip Cards 
+	If Player Rank Is Greater
+		Statements
+		Counters
+	Else if Computer Rank Is Greater
+		Statements
+		Counters
+	Else if Player Rank Equals Computer Rank & Cards Are Greater Than 4
+		Statements
+		Prompt To Flip Cards
+		While Loop To Validate Input
+		Flip Cards
+		If Player Rank Is Greater
+			Statements
+			Counters
+		Else if Computer Rank Is Greater
+			Statements
+			Counters
+		Else 
+			Statements
+			Prompt To Flip Coin
+			While Loop To Validate Input
+			Flip Coin
+			If Win Coin Flip
+				Statements
+				Counters
+			Else
+				Statements
+				Counters
+	Else if Player Rank Equals Computer Rank & Player Has 4 Cards
+		Statements
+		Prompt To Flip
+		While loop To Validate Input
+		Flip Cards
+		If Player Rank Is Greater
+			Statements
+			Counters
+		Else if Computer Rank Is Greater
+			Statements
+			Counters
+		Else
+			Statements
+			Prompt To Flip Coin
+			While Loop To Validate Input
+			Flip Coin
+			If Win Coin Flip
+				Statements
+				Counters
+			Else
+				Statements
+				Counters
+	Else if Player Rank Equals Computer Rank & Computer Has 4 Cards
+		Statements
+		Prompt To Flip
+		While loop To Validate Input
+		Flip Cards
+		If Player Rank Is Greater
+			Statements
+			Counters
+		Else if Computer Rank Is Greater
+			Statements
+			Counters
+		Else
+			Statements
+			Prompt To Flip Coin
+			While Loop To Validate Input
+			Flip Coin
+			If Win Coin Flip
+				Statements
+				Counters
+			Else
+				Statements
+				Counters
+	Else if Player Rank Equals Computer Rank & Player Has 3 Cards
+		Statements
+		Prompt To Flip
+		While loop To Validate Input
+		Flip Cards
+		If Player Rank Is Greater
+			Statements
+			Counters
+		Else if Computer Rank Is Greater
+			Statements
+			Counters
+		Else
+			Statements
+			Prompt To Flip Coin
+			While Loop To Validate Input
+			Flip Coin
+			If Win Coin Flip
+				Statements
+				Counters
+			Else
+				Statements
+				Counters
+	Else if Player Rank Equals Computer Rank & Computer Has 3 Cards
+		Statements
+		Prompt To Flip
+		While loop To Validate Input
+		Flip Cards
+		If Player Rank Is Greater
+			Statements
+			Counters
+		Else if Computer Rank Is Greater
+			Statements
+			Counters
+		Else
+			Statements
+			Prompt To Flip Coin
+			While Loop To Validate Input
+			Flip Coin
+			If Win Coin Flip
+				Statements
+				Counters
+			Else
+				Statements
+				Counters
+	Else if Player Rank Equals Computer Rank & Player Has 2 Cards
+		Statements
+		Prompt To Flip
+		While loop To Validate Input
+		Flip Cards
+		If Player Rank Is Greater
+			Statements
+			Counters
+		Else if Computer Rank Is Greater
+			Statements
+			Counters
+		Else
+			Statements
+			Prompt To Flip Coin
+			While Loop To Validate Input
+			Flip Coin
+			If Win Coin Flip
+				Statements
+				Counters
+			Else
+				Statements
+				Counters
+	Else if Player Rank Equals Computer Rank & Computer Has 2 Cards
+		Statements
+		Prompt To Flip
+		While loop To Validate Input
+		Flip Cards
+		If Player Rank Is Greater
+			Statements
+			Counters
+		Else if Computer Rank Is Greater
+			Statements
+			Counters
+		Else
+			Statements
+			Prompt To Flip Coin
+			While Loop To Validate Input
+			Flip Coin
+			If Win Coin Flip
+				Statements
+				Counters
+			Else
+				Statements
+				Counters
+	Else if Player Rank Equals Computer Rank & Player Has 1 Card
+		Statements
+		Prompt To Flip Coin
+		While Loop To Validate Input
+		Flip Coin
+		If Win Coin Flip
+			Statements
+			Counters
+		Else
+			Statements
+			Counters
+	Else if Player Rank Equals Computer Rank & Computer Has 1 Card
+		Statements
+		Prompt To Flip Coin
+		While Loop To Validate Input
+		Flip Coin
+		If Win Coin Flip
+			Statements
+			Counters
+		Else
+			Statements
+			Counter
+	Ternary Operator For Continuing Game Or Game Over Statements
+	While Loop To Continue Game (Less Than 52 Cards)
+
+If Player Card Equals 52 
+	Statement
+If Computer Card Equals 52
+	Statement
+
+Calculate Percentages of Wins
+
+Statements Of Stats
+Output Stats To File
+
+Close Files
+Return (Exit Program)
